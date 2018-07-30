@@ -1,6 +1,7 @@
 # YBNetworking
 
-## Swift : Moya + Alamofire 网络框架demo, 结合 Handyjson 简单, 简洁, 实用
+## Swift : Moya + Alamofire 网络框架demo, 结合 Handyjson 简单, 简洁, 实用.
+## 可根据自己的需求对每一条请求进行对应的设置
 
 
 ## demo
