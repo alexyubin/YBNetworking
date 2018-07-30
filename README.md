@@ -1,6 +1,6 @@
 # YBNetworking
 
-## 一个属性 给UILabel添加长按复制
+## Swift : Moya + Alamofire 网络框架demo, 结合 Handyjson 简单, 简洁, 实用
 
 
 ## demo
@@ -11,11 +11,12 @@
 
 ```swift
 
-simp
-
-   YBNetWorkRequest(.detailsApi, completion: { (string) -> (Void) in
+   YBNetWorkRequest(.searchApi(parameters: parameters), completion: { (string) -> (Void) in
    
        // do someing
+       
+       // 结合 Handyjson 使用
+       // let model = JSONDeserializer<SearchModel>.deserializeFrom(json: string)!
        
    }) { (string) -> (Void) in
    
@@ -23,13 +24,18 @@ simp
        
         print(string)
    }
+   
 ```
 ## Or
 
 ```swift  
-    YBNetWorkRequest(.detailsApi, completion: { (string) -> (Void) in
+
+    YBNetWorkRequest(.searchApi(parameters: parameters), completion: { (string) -> (Void) in
                 
        // do someing
+       
+       // 结合 Handyjson 使用
+       // let model = JSONDeserializer<SearchModel>.deserializeFrom(json: string)!
                 
     }, failed: { (string) -> (Void) in
         
@@ -42,6 +48,7 @@ simp
        // call back error
        
     }
+    
 ```
 
 
