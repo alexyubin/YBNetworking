@@ -9,10 +9,15 @@
 /* Begin PBXBuildFile section */
 		C00DF40E445E2BB6A48227EC /* Pods_YBNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A1A1AF14E7724F70523D6E3 /* Pods_YBNetworking.framework */; };
 		FA0F2A0E20F5A49B00396D43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0F2A0D20F5A49B00396D43 /* AppDelegate.swift */; };
-		FA0F2A1020F5A49B00396D43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0F2A0F20F5A49B00396D43 /* ViewController.swift */; };
+		FA0F2A1020F5A49B00396D43 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0F2A0F20F5A49B00396D43 /* DemoViewController.swift */; };
 		FA0F2A1320F5A49B00396D43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA0F2A1120F5A49B00396D43 /* Main.storyboard */; };
 		FA0F2A1520F5A49B00396D43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA0F2A1420F5A49B00396D43 /* Assets.xcassets */; };
 		FA0F2A1820F5A49C00396D43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA0F2A1620F5A49C00396D43 /* LaunchScreen.storyboard */; };
+		FA22E7EC210B235F0011FB26 /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA22E7EB210B235F0011FB26 /* SearchModel.swift */; };
+		FA9D22A6210EE96D00E88ECA /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9D22A5210EE96D00E88ECA /* DetailsViewController.swift */; };
+		FA9D22A8210EE98600E88ECA /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9D22A7210EE98600E88ECA /* SearchViewController.swift */; };
+		FAEDA043210B216E005EA28D /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEDA042210B216E005EA28D /* Api.swift */; };
+		FAEDA045210B21A7005EA28D /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEDA044210B21A7005EA28D /* ApiManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,11 +25,16 @@
 		F693C6035426D771A2C730D0 /* Pods-YBNetworking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YBNetworking.release.xcconfig"; path = "Pods/Target Support Files/Pods-YBNetworking/Pods-YBNetworking.release.xcconfig"; sourceTree = "<group>"; };
 		FA0F2A0A20F5A49B00396D43 /* YBNetworking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YBNetworking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA0F2A0D20F5A49B00396D43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FA0F2A0F20F5A49B00396D43 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FA0F2A0F20F5A49B00396D43 /* DemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
 		FA0F2A1220F5A49B00396D43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA0F2A1420F5A49B00396D43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA0F2A1720F5A49C00396D43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA0F2A1920F5A49C00396D43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA22E7EB210B235F0011FB26 /* SearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModel.swift; sourceTree = "<group>"; };
+		FA9D22A5210EE96D00E88ECA /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		FA9D22A7210EE98600E88ECA /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		FAEDA042210B216E005EA28D /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		FAEDA044210B21A7005EA28D /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		FD90037EA7C1CF68DF495B56 /* Pods-YBNetworking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YBNetworking.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YBNetworking/Pods-YBNetworking.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,14 +88,27 @@
 		FA0F2A0C20F5A49B00396D43 /* YBNetworking */ = {
 			isa = PBXGroup;
 			children = (
+				FAEDA041210B213E005EA28D /* YBNetwork */,
 				FA0F2A0D20F5A49B00396D43 /* AppDelegate.swift */,
-				FA0F2A0F20F5A49B00396D43 /* ViewController.swift */,
+				FA0F2A0F20F5A49B00396D43 /* DemoViewController.swift */,
+				FA9D22A5210EE96D00E88ECA /* DetailsViewController.swift */,
+				FA9D22A7210EE98600E88ECA /* SearchViewController.swift */,
 				FA0F2A1120F5A49B00396D43 /* Main.storyboard */,
 				FA0F2A1420F5A49B00396D43 /* Assets.xcassets */,
 				FA0F2A1620F5A49C00396D43 /* LaunchScreen.storyboard */,
 				FA0F2A1920F5A49C00396D43 /* Info.plist */,
+				FA22E7EB210B235F0011FB26 /* SearchModel.swift */,
 			);
 			path = YBNetworking;
+			sourceTree = "<group>";
+		};
+		FAEDA041210B213E005EA28D /* YBNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				FAEDA042210B216E005EA28D /* Api.swift */,
+				FAEDA044210B21A7005EA28D /* ApiManager.swift */,
+			);
+			path = YBNetwork;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,8 +246,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA0F2A1020F5A49B00396D43 /* ViewController.swift in Sources */,
+				FAEDA045210B21A7005EA28D /* ApiManager.swift in Sources */,
+				FA9D22A8210EE98600E88ECA /* SearchViewController.swift in Sources */,
+				FAEDA043210B216E005EA28D /* Api.swift in Sources */,
+				FA0F2A1020F5A49B00396D43 /* DemoViewController.swift in Sources */,
+				FA22E7EC210B235F0011FB26 /* SearchModel.swift in Sources */,
 				FA0F2A0E20F5A49B00396D43 /* AppDelegate.swift in Sources */,
+				FA9D22A6210EE96D00E88ECA /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
